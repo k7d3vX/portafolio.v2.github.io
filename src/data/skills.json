@@ -1,0 +1,55 @@
+{
+    "frontend": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "React",
+        "Typescript",
+        "Eslint",
+        "MaterialUI",
+        "AngularJs",
+        "Angular",
+        "SemanticUI React",
+        "React Redux",
+        "Jest",
+        "Vitest",
+        "Karma",
+        "Jasmin",
+        "Protractor",
+        "Vue"
+    ],
+    "backend": [
+        "Java",
+        "JavaEE",
+        "Spring Boot",
+        "C#",
+        "gRPC",
+        "Kafka",
+        "Redis",
+        "Spring Framework",
+        "Junit",
+        "Mockito"
+    ],
+    "databases": [
+        "PostgreSQL",
+        "MySQL",
+        "MongoDB",
+        "GraphQL",
+        "Elasticsearch",
+        "Firestore"
+    ],
+    "tools": [
+        "Git",
+        "GitHub",
+        "Docker",
+        "Linux",
+        "AWS",
+        "Gradle",
+        "Maven",
+        "Google Cloud Plataform",
+        "Jenkins",
+        "NPM",
+        "Yarn",
+        "VSCode"
+    ]
+}

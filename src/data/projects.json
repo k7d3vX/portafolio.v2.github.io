@@ -1,0 +1,14 @@
+[
+    {
+        "name": "Bithday 15 Party",
+        "description": "Web application for managing guest lists, including QR code generation, scanning, and verification.",
+        "liveDemo": "https://birthday-15-party.web.app/",
+        "github": "https://github.com/cristalfloresbo/birthday-15-party"
+    },
+    {
+        "name": "Cinema Tickets",
+        "description": "A cinema seat control webpage allows users to view, and select their seat reservations interactively.",
+        "liveDemo": "https://taller-vue2-firebase.web.app/",
+        "github": "https://github.com/cristalfloresbo/taller-vue2-firebase"
+    }
+]

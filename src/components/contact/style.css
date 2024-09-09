@@ -1,0 +1,6 @@
+.text-center {
+    display: flow-root;
+    justify-content: center;
+    justify-items: center;
+    justify-self: center;
+}

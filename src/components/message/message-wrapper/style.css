@@ -1,0 +1,17 @@
+.message {
+    max-width: max-content;
+    box-sizing: border-box;
+    position: fixed;
+    z-index: 9999999;
+    width: calc(100% - 20px);
+    right: 10px;
+    top: 10px;
+    transition: .5s ease-in-out;
+    visibility: visible;
+    opacity: 1;
+    height: auto;
+    overflow: hidden;
+    animation-name: showAlert;
+    animation-duration: .5s;
+    animation-fill-mode: both;
+}
