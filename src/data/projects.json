@@ -10,5 +10,11 @@
         "description": "A cinema seat control webpage allows users to view, and select their seat reservations interactively.",
         "liveDemo": "https://taller-vue2-firebase.web.app/",
         "github": "https://github.com/cristalfloresbo/taller-vue2-firebase"
+    },
+    {
+        "name": "Cinema CF",
+        "description": "A cinema webpage that manages movies, the users can create or edit, list, and delete movies, and also can add actors and actres.",
+        "liveDemo": "https://peliculas.fly.dev",
+        "github": "https://github.com/cristalfloresbo/cinema-cf"
     }
 ]
