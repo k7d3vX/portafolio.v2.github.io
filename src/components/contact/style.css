@@ -4,3 +4,30 @@
     justify-items: center;
     justify-self: center;
 }
+
+.title-contact {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+    margin: 0;
+    text-align: center;
+}
+
+.subtitle-contact {
+    color: #6e6e77;
+    font-size: 1.25rem;
+    line-height: 1.625;
+    margin: 0;
+    text-align: center;
+}
+
+.input-contact {
+    background: white;
+    border-radius: 6px;
+}
+
+.button-contact {
+    background: #0D1117;
+    color: white !important;
+    width: 100%;
+    text-transform: none;
+}

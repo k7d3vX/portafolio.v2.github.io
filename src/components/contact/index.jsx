@@ -56,27 +56,9 @@ const Contact = () => {
                 justifyContent={"center"}
                 display={"grid"}
             >
-                <h2
-                    style={{
-                        fontSize: "1.875rem",
-                        lineHeight: "2.25rem",
-                        margin: "0",
-                        textAlign: "center",
-                    }}
-                >
-                    Get in Touch
-                </h2>
+                <h2 className="title-contact">Get in Touch</h2>
                 <br />
-                <p
-                    style={{
-                        color: "#6e6e77",
-                        fontSize: "1.25rem",
-                        lineHeight: "1.625",
-                        margin: "0",
-                        textAlign: "center",
-                        width: "110vh",
-                    }}
-                >
+                <p className="subtitle-contact">
                     I&apos;m always open to new opportunities and
                     collaborations. <br />
                     Feel free to reach out to me.
@@ -104,13 +86,10 @@ const Contact = () => {
                 }) => (
                     <Form>
                         <Grid2 container spacing={1}>
-                            <Grid2
-                                size={12}
-                                justifyContent={"center"}
-                                display={"grid"}
-                            >
+                            <Grid2 size={9} offset={1.5} xs={12}>
                                 <FormControl
                                     error={Boolean(touched.name && errors.name)}
+                                    fullWidth
                                 >
                                     <InputLabel htmlFor="name">Name</InputLabel>
                                     <Field
@@ -119,12 +98,7 @@ const Contact = () => {
                                         name="name"
                                         label="Nombre"
                                         variant="outlined"
-                                        fullWidth
-                                        style={{
-                                            background: "white",
-                                            width: "70vh",
-                                            borderRadius: "6px",
-                                        }}
+                                        className="input-contact"
                                         error={Boolean(
                                             touched.name && errors.name
                                         )}
@@ -139,15 +113,12 @@ const Contact = () => {
                                     )}
                                 </FormControl>
                             </Grid2>
-                            <Grid2
-                                size={12}
-                                justifyContent={"center"}
-                                display={"grid"}
-                            >
+                            <Grid2 size={9} offset={1.5} fullWidth>
                                 <FormControl
                                     error={Boolean(
                                         touched.email && errors.email
                                     )}
+                                    fullWidth
                                 >
                                     <InputLabel htmlFor="email">
                                         Email
@@ -160,11 +131,7 @@ const Contact = () => {
                                         type="email"
                                         variant="outlined"
                                         fullWidth
-                                        style={{
-                                            background: "white",
-                                            width: "70vh",
-                                            borderRadius: "6px",
-                                        }}
+                                        className="input-contact"
                                         onChange={handleChange}
                                         onBlur={handleBlur}
                                         value={values.email}
@@ -176,15 +143,12 @@ const Contact = () => {
                                     )}
                                 </FormControl>
                             </Grid2>
-                            <Grid2
-                                size={12}
-                                justifyContent={"center"}
-                                display={"grid"}
-                            >
+                            <Grid2 size={9} offset={1.5}>
                                 <FormControl
                                     error={Boolean(
                                         touched.message && errors.message
                                     )}
+                                    fullWidth
                                 >
                                     <TextField
                                         id="message"
@@ -195,11 +159,7 @@ const Contact = () => {
                                         multiline
                                         rows={4}
                                         fullWidth
-                                        style={{
-                                            background: "white",
-                                            width: "70vh",
-                                            borderRadius: "6px",
-                                        }}
+                                        className="input-contact"
                                         onChange={handleChange}
                                         onBlur={handleBlur}
                                         value={values.message}
@@ -212,18 +172,13 @@ const Contact = () => {
                                 </FormControl>
                             </Grid2>
                             <Grid2
-                                size={12}
+                                size={9}
+                                offset={1.5}
                                 justifyContent={"center"}
-                                display={"grid"}
                             >
                                 <Button
                                     variant="contained"
-                                    style={{
-                                        background: "#0D1117",
-                                        color: "white",
-                                        width: "70vh",
-                                        textTransform: "none",
-                                    }}
+                                    className="button-contact"
                                     type="submit"
                                     disabled={!isValid}
                                 >

@@ -8,10 +8,11 @@ import {
     CardContent,
     Typography,
 } from "@mui/material";
+import "./style.css";
 
 const ProjectItem = ({ project }) => {
     return (
-        <Card sx={{ maxWidth: 345 }}>
+        <Card>
             <CardActionArea href={project.liveDemo} target="_blank">
                 <CardContent>
                     <Typography gutterBottom variant="h5" component="div">
@@ -30,11 +31,7 @@ const ProjectItem = ({ project }) => {
                     size="small"
                     color="primary"
                     variant="contained"
-                    style={{
-                        textTransform: "none",
-                        background: "#0D1117",
-                        color: "white",
-                    }}
+                    className="card-button-project-item"
                     href={project.liveDemo}
                     target="_blank"
                 >
@@ -47,11 +44,7 @@ const ProjectItem = ({ project }) => {
                     size="small"
                     color="primary"
                     variant="contained"
-                    style={{
-                        textTransform: "none",
-                        background: "#0D1117",
-                        color: "white",
-                    }}
+                    className="card-button-project-item"
                     target="_blank"
                     href={project.github}
                 >

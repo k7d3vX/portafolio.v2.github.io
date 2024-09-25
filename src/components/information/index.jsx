@@ -17,11 +17,37 @@ const Information = () => {
             container
             sx={{
                 alignContent: "center",
-                justifyContent: "center",
-                margin: "5rem",
+                margin: "5rem 0 5rem 0",
             }}
         >
-            <Grid2 id="about-section" size={5}>
+            <Grid2
+                size={12}
+                sx={{
+                    display: {
+                        md: "none",
+                        sm: "flex",
+                        xs: "flex",
+                        justifyContent: "center",
+                    },
+                }}
+            >
+                <Badge
+                    overlap="circular"
+                    anchorOrigin={{ vertical: "bottom", horizontal: "right" }}
+                    badgeContent={<img src={bolivia} width={50} height={50} />}
+                >
+                    <StyledImage
+                        src={photo}
+                        draggable="false"
+                        sx={{ width: "10rem", height: "10.8rem" }}
+                    />
+                </Badge>
+            </Grid2>
+            <Grid2
+                id="about-section"
+                size={{ md: 4, sm: 12, xs: 12 }}
+                offset={{ md: 3, sm: 0, xs: 0 }}
+            >
                 <h1>About me</h1>
                 <p className="text-information">
                     Experienced software developer with a strong focus on
@@ -31,6 +57,18 @@ const Information = () => {
                     continuous maintenance and optimization, enhancing software
                     performance while addressing evolving user needs.
                 </p>
+            </Grid2>
+            <Grid2 sx={{ display: { md: "block", sm: "none", xs: "none" } }}>
+                <Badge
+                    overlap="circular"
+                    anchorOrigin={{ vertical: "bottom", horizontal: "right" }}
+                    badgeContent={<img src={bolivia} width={70} height={70} />}
+                >
+                    <StyledImage src={photo} draggable="false" />
+                </Badge>
+            </Grid2>
+            <Grid2 size={{ md: 12, sm: 12, xs: 12 }}
+                offset={{ md: 3, sm: 0, xs: 0 }}>
                 <Button
                     color="inherit"
                     className="botton-download-cv"
@@ -49,15 +87,6 @@ const Information = () => {
                 >
                     <strong>Download CV(ES)</strong>
                 </Button>
-            </Grid2>
-            <Grid2 size={2}>
-                <Badge
-                    overlap="circular"
-                    anchorOrigin={{ vertical: "bottom", horizontal: "right" }}
-                    badgeContent={<img src={bolivia} width={70} height={70} />}
-                >
-                    <StyledImage src={photo} draggable="false" />
-                </Badge>
             </Grid2>
         </Grid2>
     );

@@ -1,3 +1,12 @@
 .text-skill {
     color: #8892b0;
 }
+
+.card-skill-item {
+    background: #112240;
+}
+
+
+.card-title-skill-item {
+    margin: 0;
+}

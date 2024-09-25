@@ -4,11 +4,18 @@ import projects from "../../data/projects.json";
 
 const ProjectsList = () => {
     return (
-        <div id="projects-section" style={{ padding: "3rem 10rem 3rem 10rem" }}>
-            <h1>Featured Projects</h1>
-            <Grid2 container spacing={2}>
+        <div id="projects-section">
+            <Grid2
+                container
+                spacing={2}
+                size={{ md: 10, sm: 12, xs: 12 }}
+                offset={{ md: 1, sm: 0, xs: 0 }}
+            >
+                <Grid2 size={12}>
+                    <h1>Featured Projects</h1>
+                </Grid2>
                 {projects.map((project) => (
-                    <Grid2 key={project.name} size={"auto"}>
+                    <Grid2 key={project.name} size={{ md: 6, lg: 6,xl: 3, sm: 6, xs: 12 }}>
                         <ProjectItem project={project} />
                     </Grid2>
                 ))}

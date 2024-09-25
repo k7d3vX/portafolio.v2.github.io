@@ -2,7 +2,8 @@ import {
     Grid2,
     Link,
 } from "@mui/material";
-import workspace from "../../assets/icons8-workspace-100.png";
+import workspace from "../../assets/workspace.png";
+import "./style.css";
 
 const Header = () => {
 
@@ -23,16 +24,16 @@ const Header = () => {
                 container
                 spacing={2}
                 justifyContent={"space-between"}
-                alignItems={"baseline"}
+                alignItems={"center"}
             >
                 <Grid2 size={"auto"} alignContent={"unset"}>
-                    <div style={{ display: "flex", alignItems: "center" }}>
+                    <div className="div-logo">
                         <img
                             src={workspace}
                             alt="workspace"
-                            style={{ width: "2.5rem", height: "2.5rem" }}
+                            className="logo"
                         />
-                        <h1 style={{ margin: "0" }}>Portafolio</h1>
+                        <h1>Portafolio</h1>
                     </div>
                 </Grid2>
                 <Grid2 size={"auto"}>
